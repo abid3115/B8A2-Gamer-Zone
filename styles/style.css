@@ -190,6 +190,8 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
+    border: 2px solid rgba(105, 63, 70, 0.71);
+    border-radius: 10px;
 }
 
 .watch-now {
@@ -268,6 +270,63 @@
     margin: 25px 370px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer part styles */
+
+footer {
+    margin-top: 70px;
+    background: #0B0223;
+
+    text-align: center;
+}
+
+.footer-title-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links>a {
+    margin: 20px 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.footer-btn{
+    border: none;
+    background-color: #0B0223;
+    margin: 20px;
+    cursor: pointer;
+}
+.footer-description-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-description{
+    color: #FFF;
+    font-size: 1rem;
+}
+.copy-right{
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 120px;
 }
 
 /* Responsive for mobiles */
@@ -373,20 +432,35 @@
         top: -150px;
         left: 10px;
     }
+
     .button-line-one {
         margin: 0px 0px;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;   
+        align-items: center;
     }
-    .button-line-two .primary-btn{
-            display: none;
+
+    .button-line-two .primary-btn {
+        display: none;
     }
+
     .primary-btn {
         font-size: .5rem;
         gap: 4px;
         padding: 3px 10px;
         margin-left: 0px;
-    
+
+    }
+    .footer-links {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+    .footer-btn{
+        margin: 25px 10px;
+    }
+    .copy-right{
+        padding-top: 15px;
+        padding-bottom: 120px;
     }
 }
 
@@ -476,19 +550,22 @@
         top: -300px;
         left: 10px;
     }
+
     .button-line-one {
         margin: 0px 0px;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;   
+        align-items: center;
     }
-    .button-line-two .primary-btn{
-            display: none;
+
+    .button-line-two .primary-btn {
+        display: none;
     }
+
     .primary-btn {
         font-size: .9rem;
         gap: 6px;
         padding: 5px 15px;
         margin-left: 0px;
-    
+
     }
 }
